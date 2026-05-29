@@ -1,0 +1,502 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Woman Beauty | Luxury Skincare Made Affordable</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fcf9f8",
+                    "on-primary-container": "#253000",
+                    "surface-variant": "#e5e2e1",
+                    "on-primary-fixed": "#161f00",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "outline-variant": "#c6c8b8",
+                    "cream-accent": "#FAF9F6",
+                    "on-surface": "#1b1b1c",
+                    "on-secondary-container": "#7a3c46",
+                    "surface-dim": "#dcd9d9",
+                    "background": "#fcf9f8",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "primary-fixed-dim": "#bdce89",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-tertiary-container": "#2c2e1d",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "primary-fixed": "#d9eaa3",
+                    "surface-container": "#f0eded",
+                    "primary": "#56642b",
+                    "on-error-container": "#93000a",
+                    "secondary": "#8c4b55",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#70343e",
+                    "primary-container": "#8a9a5b",
+                    "surface": "#fcf9f8",
+                    "on-secondary-fixed": "#3a0915",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#303030",
+                    "secondary-container": "#feaab6",
+                    "tertiary-container": "#94957f",
+                    "tertiary": "#5e604d",
+                    "charcoal-text": "#1F1F1F",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#e4e4cc",
+                    "inverse-primary": "#bdce89",
+                    "on-primary-fixed-variant": "#3e4c16",
+                    "secondary-fixed": "#ffd9dd",
+                    "on-background": "#1b1b1c",
+                    "rose-gold-muted": "#C29B8F",
+                    "sage-bg": "#F1F3EB",
+                    "outline": "#76786b",
+                    "secondary-fixed-dim": "#ffb2bc",
+                    "on-surface-variant": "#46483c",
+                    "surface-container-high": "#eae7e7",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-tint": "#56642b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "baseline": "8px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "label-caps": ["Inter"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-sm": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        @keyframes focusReveal {
+            from { filter: blur(20px); transform: scale(1.1); }
+            to { filter: blur(0); transform: scale(1); }
+        }
+        .animate-focus-reveal {
+            animation: focusReveal 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .shadow-soft {
+            box-shadow: 0 10px 40px -10px rgba(194, 155, 143, 0.15);
+        }
+        .glass-nav {
+            backdrop-filter: blur(8px);
+            background: rgba(252, 249, 248, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background text-charcoal-text selection:bg-rose-gold-muted/30 overflow-x-hidden">
+<!-- Announcement Bar -->
+<div class="bg-primary text-on-primary py-2 px-margin-mobile md:px-margin-desktop text-center">
+<p class="font-label-caps text-label-caps tracking-widest">
+            PREMIUM SKINCARE, AFFORDABLE PRICES. FREE DELIVERY ON ORDERS ABOVE RS. 2,500!
+        </p>
+</div>
+<!-- TopAppBar -->
+<header id="main-header" class="fixed top-0 w-full z-50 glass-nav mt-10 transition-all duration-300">
+<div class="flex justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md tracking-tight text-primary" href="#">Woman Beauty</a>
+<nav class="hidden md:flex gap-10 items-center">
+<a class="text-primary font-bold border-b-2 border-rose-gold-muted font-label-caps text-label-caps py-2" href="#">Shop</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2" href="#">Our Story</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps py-2" href="#">Sahulat Bazar</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="hover:scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="search">search</span>
+</button>
+<button class="hover:scale-95 duration-200 ease-in-out relative">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-secondary text-on-secondary text-[10px] w-4 h-4 flex items-center justify-center rounded-full">0</span>
+</button>
+<a class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps hover:bg-primary-container transition-all" href="#">
+                    Order via WhatsApp
+                </a>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section (Integrated with GSAP Canvas) -->
+<section id="hero-section" class="relative h-[100vh] flex items-center overflow-hidden bg-black">
+<div class="absolute inset-0 z-0">
+<!-- Canvas replacing static image -->
+<canvas id="hero-canvas" class="w-full h-full block animate-focus-reveal"></canvas>
+<div class="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent pointer-events-none"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl space-y-8">
+<span class="inline-block px-4 py-1 bg-sage-bg text-primary font-label-caps text-label-caps rounded-full">EST. 2024</span>
+<h1 class="font-headline-xl text-headline-xl text-charcoal-text">Luxury Skincare Made Affordable.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Experience premium, natural formulas designed for your skin—without the high price tag. Proudly available online and at Sahulat Bazar.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-charcoal-text text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:translate-y-[-2px] transition-all shadow-soft">
+                            Shop the Collection
+                        </button>
+<button class="bg-[#25D366] text-white px-10 py-4 rounded-full font-label-caps text-label-caps flex items-center justify-center gap-2 hover:translate-y-[-2px] transition-all shadow-soft">
+<span class="material-symbols-outlined" data-icon="forum">forum</span>
+                            Direct WhatsApp Order
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-20 bg-background">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg">Signature Essentials</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Carefully formulated for all skin types.</p>
+</div>
+<a class="font-label-caps text-label-caps border-b border-charcoal-text pb-1 hover:text-rose-gold-muted hover:border-rose-gold-muted transition-colors" href="#">View All Products</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Product 1 -->
+<div class="group bg-cream-accent rounded-xl p-6 transition-all hover:shadow-soft">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-sage-bg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A minimalist studio photograph of a premium cleansing gel bottle with a black pump. The bottle is positioned on a rustic stone pedestal against a soft sage green background. Natural light creates delicate shadows, emphasizing the clean branding and the organic, luxurious feel of the skincare product." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlABjJzkdZhGakv35zBCVnSGicuw3bJHjzFTtpo1gGShc4JjdO3qS4wl0rr9SReOBPcyH49J-VI7Rfmk2I4VdUHD_jQLGelwL3AFwOSoJ-654lTVc74Brcbk0zMZIn9PM-WBf2c5U6ifPXkZs_xRmXcwilQcKW_a2fdKYJQZM8idKYAHsBe4dyYlVkqTnQ3l6e6vskPLI3Dl23EtYihA6w_93olhPvp3r9eB4fO_CgQZ_k2h6CT3eSlbGy5tIaKBndSCFvNq7t_g">
+</div>
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant">DAILY CARE</span>
+<h3 class="font-headline-md text-headline-md">Cleansing Gel</h3>
+<p class="text-primary font-bold text-lg">Rs. 499/-</p>
+<div class="grid grid-cols-2 gap-3 pt-4">
+<button class="bg-charcoal-text text-on-primary py-3 rounded-lg font-label-caps text-[10px] uppercase tracking-wider hover:opacity-90 transition-opacity">Add to Cart</button>
+<button class="border border-charcoal-text text-charcoal-text py-3 rounded-lg font-label-caps text-[10px] uppercase tracking-wider flex items-center justify-center gap-1 hover:bg-charcoal-text hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+                                WhatsApp
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group bg-cream-accent rounded-xl p-6 transition-all hover:shadow-soft">
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-sage-bg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up shot of a luxurious rose gold moisturizing cream jar with an open lid, revealing the creamy white texture. The jar sits on a reflective marble surface surrounded by subtle green botanical leaves. The lighting is soft and ethereal, highlighting the high-end editorial aesthetic of Woman Beauty brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvfCCvykADfJiS0ixCSe_SrJMBXkNYzLI2HodZMIDhZqwufaWaKe1kjRo2UmbomTrTt-YSqteO1WM0M3heQswww76B7hmz70X_NAL_hDcfTWoMbtJ-wev2HywyqKL4JwelBDMu2aW9_6gkm09Wjo6HlmlumxEbLTRWOh1sK-2lFp1TSeJZcVOvw9dYHaQZo6FA-48Chw5q3zaE1QghALmmnVRD1kcw8nY-Bs8babNJ-7dTLlYnNYVjvA3tv7ipZvEozT38rfpcwQ">
+</div>
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant">HYDRATION</span>
+<h3 class="font-headline-md text-headline-md">Moisturizing Cream</h3>
+<p class="text-primary font-bold text-lg">Rs. 650/-</p>
+<div class="grid grid-cols-2 gap-3 pt-4">
+<button class="bg-charcoal-text text-on-primary py-3 rounded-lg font-label-caps text-[10px] uppercase tracking-wider hover:opacity-90 transition-opacity">Add to Cart</button>
+<button class="border border-charcoal-text text-charcoal-text py-3 rounded-lg font-label-caps text-[10px] uppercase tracking-wider flex items-center justify-center gap-1 hover:bg-charcoal-text hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+                                WhatsApp
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 3 - Bundle -->
+<div class="group bg-rose-gold-muted/10 rounded-xl p-6 transition-all hover:shadow-soft relative border-2 border-rose-gold-muted/30">
+<div class="absolute -top-4 right-6 bg-secondary text-on-secondary font-label-caps text-[10px] px-4 py-1 rounded-full z-10 shadow-md">BEST VALUE</div>
+<div class="aspect-[4/5] overflow-hidden mb-6 bg-sage-bg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A curated skincare bundle set featuring the cleansing gel and moisturizing cream bottles arranged artistically on a textured light beige surface. The composition includes a sprig of fresh eucalyptus and soft shadows from an unseen window. The image conveys a sense of holistic natural beauty and premium quality at an accessible price point." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8V1p_cZ8KW4uxMAknYBP59JaqIQfbh8QMG9n2vaLTrJ5uYlArFpzBUQvFlDaY5oyORlCIkCvZnKqDlTzSKpYInUDjeFo1WHxi6woyku31gWliBkTDThOkmt8H-kBhzBhOk8fv3vlLppFOtlQKwDfGD33advKkIlgomZN6Oyc_RgfNHBGW1B4UIWjK2Eoz7m4D7M6m2TEAuaNvhxtksuFPkUArR2Sme4W_X4qXflfRyzRhzgU8rm-aMCri5qoqIiY2tVE-b23hQ">
+</div>
+<div class="space-y-3">
+<span class="font-label-caps text-label-caps text-secondary font-bold">BUNDLE PACK</span>
+<h3 class="font-headline-md text-headline-md">Best Value Bundle</h3>
+<div class="flex items-center gap-3">
+<p class="text-primary font-extrabold text-2xl">Rs. 999/-</p>
+<p class="text-on-surface-variant line-through text-sm">Rs. 1,149/-</p>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-4">
+<button class="bg-secondary text-on-secondary py-3 rounded-lg font-label-caps text-[10px] uppercase tracking-wider hover:opacity-90 transition-opacity">Add Bundle</button>
+<button class="border border-secondary text-secondary py-3 rounded-lg font-label-caps text-[10px] uppercase tracking-wider flex items-center justify-center gap-1 hover:bg-secondary hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="chat">chat</span>
+                                WhatsApp
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust & Location -->
+<section class="py-24 bg-sage-bg relative z-20">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="space-y-4">
+<h2 class="font-headline-lg text-headline-lg">Experience Luxury in Person</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Visit our flagship location for a personalized skin consultation and to experience the Woman Beauty range in person.
+                        </p>
+</div>
+<div class="bg-surface p-8 rounded-2xl shadow-soft space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<h4 class="font-bold text-charcoal-text">Sahulat Bazar Plaza</h4>
+<p class="text-on-surface-variant">Shop #G-12, Ground Floor.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-bold text-charcoal-text">Business Hours</h4>
+<p class="text-on-surface-variant">Mon - Sat: 11:00 AM - 9:00 PM</p>
+</div>
+</div>
+</div>
+<div class="bg-primary/5 p-6 rounded-xl border border-primary/10 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary p-2 bg-primary/10 rounded-full" data-icon="verified_user" data-weight="fill">verified_user</span>
+<div>
+<p class="font-bold text-primary">100% Secure Cash on Delivery (COD)</p>
+<p class="text-sm text-on-surface-variant">Available Across Pakistan - Pay Only After Checking Your Parcel.</p>
+</div>
+</div>
+</div>
+<div class="h-[400px] bg-surface rounded-2xl overflow-hidden shadow-soft grayscale hover:grayscale-0 transition-all duration-700">
+<div class="w-full h-full bg-slate-200 relative">
+<div class="absolute inset-0 flex items-center justify-center flex-col text-on-surface-variant gap-2">
+<span class="material-symbols-outlined text-4xl" data-icon="map">map</span>
+<p class="font-label-caps text-label-caps">Map for Sahulat Bazar, Pakistan</p>
+<img alt="Map Location" class="w-full h-full object-cover" data-location="Rawalpindi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwdGzYVOInZxNs2--3Wog32mYHl3v6pzmV0jGt2Xc9IjF0RdNoz9iBIwb-XHYViMuS6fFDk8RVbnhDo_BhHi_mUmIxBvjt4pSZOVtxexMOk2FLXgAYgooI2hgdf9k5cYeLY4WpyCCkQyYQ5j9xNd1p9j05VIwgmjHBWPGCCWNu3x7zMEyN7cyo5M3AsngljSmcslJCdteT_s0Sp_UW1-VCGWSF1lCrKXKEkIN3OCAjTuj6JTdoKqqYGLgPYszRztxzzzBc0H5Euw">
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface-container-low border-t border-on-surface/10 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1 space-y-6">
+<a class="font-headline-md text-headline-md text-primary" href="#">Woman Beauty</a>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Luxury skincare made affordable for the modern Pakistani woman. Natural ingredients, real results.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors" data-icon="camera">camera</span>
+</div>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-charcoal-text">Shop</h5>
+<ul class="space-y-2">
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:translate-x-1 transition-transform inline-block" href="#">Best Sellers</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:translate-x-1 transition-transform inline-block" href="#">New Arrivals</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:translate-x-1 transition-transform inline-block" href="#">Gift Bundles</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-charcoal-text">Information</h5>
+<ul class="space-y-2">
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:translate-x-1 transition-transform inline-block" href="#">Privacy Policy</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:translate-x-1 transition-transform inline-block" href="#">Shipping Info</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:translate-x-1 transition-transform inline-block" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-charcoal-text">Newsletter</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subscribe for exclusive offers and skincare tips.</p>
+<div class="relative">
+<input class="w-full bg-cream-accent border-b border-rose-gold-muted/30 focus:border-rose-gold-muted focus:ring-0 px-0 py-2 text-sm" placeholder="Email Address" type="email">
+<button class="absolute right-0 top-1/2 -translate-y-1/2 text-primary">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center border-t border-on-surface/5 pt-8">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Woman Beauty. All Rights Reserved.</p>
+</div>
+</footer>
+
+<!-- GSAP Libraries for Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+        // Micro-interactions and scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+                // Adjust margin down to 0 smoothly when scrolling past the announcement bar
+                header.classList.remove('mt-10');
+                header.classList.add('mt-0');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('mt-10');
+                header.classList.remove('mt-0');
+            }
+        });
+
+        // Simple smooth revealed elements
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.group').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-1000');
+            observer.observe(el);
+        });
+
+        // -------------------------------------------------------------
+        // GSAP CANVAS SCROLL ANIMATION LOGIC
+        // -------------------------------------------------------------
+        gsap.registerPlugin(ScrollTrigger);
+
+        const canvas = document.getElementById("hero-canvas");
+        const context = canvas.getContext("2d");
+
+        const frameCount = 240;
+        const currentFrame = (index) => {
+            const frameNum = (index + 1).toString().padStart(3, '0');
+            return `ezgif-23998392b57aebd8-jpg/ezgif-frame-${frameNum}.jpg`;
+        };
+
+        const images = [];
+        const canvasProps = { frame: 0 };
+        let hasInitialized = false;
+
+        for (let i = 0; i < frameCount; i++) {
+            const img = new Image();
+            img.src = currentFrame(i);
+            images.push(img);
+            if (i === 0) {
+                img.onload = () => {
+                    if (!hasInitialized) {
+                        resizeCanvas();
+                        hasInitialized = true;
+                    }
+                };
+            }
+        }
+
+        function renderCanvas() {
+            let frameToDraw = Math.round(canvasProps.frame);
+
+            if (!images[frameToDraw] || !images[frameToDraw].complete) {
+                let fallbackFound = false;
+                for (let i = frameToDraw; i >= 0; i--) {
+                    if (images[i] && images[i].complete) {
+                        frameToDraw = i;
+                        fallbackFound = true;
+                        break;
+                    }
+                }
+                if (!fallbackFound) return;
+            }
+            
+            const img = images[frameToDraw];
+            const dpr = window.devicePixelRatio || 1;
+            
+            const scale = Math.max(
+                (canvas.width / dpr) / img.width, 
+                (canvas.height / dpr) / img.height
+            );
+            
+            const x = ((canvas.width / dpr) / 2) - (img.width / 2) * scale;
+            const y = ((canvas.height / dpr) / 2) - (img.height / 2) * scale;
+
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.drawImage(img, x, y, img.width * scale, img.height * scale);
+        }
+
+        function resizeCanvas() {
+            const dpr = window.devicePixelRatio || 1;
+            // Get dimensions of the parent container to keep canvas sized correctly
+            const parent = canvas.parentElement;
+            
+            canvas.width = parent.clientWidth * dpr;
+            canvas.height = parent.clientHeight * dpr;
+            context.scale(dpr, dpr);
+            
+            canvas.style.width = `${parent.clientWidth}px`;
+            canvas.style.height = `${parent.clientHeight}px`;
+            
+            renderCanvas();
+        }
+        
+        window.addEventListener("resize", resizeCanvas);
+
+        // Pin the hero section while the user scrolls, playing the 240 frames
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#hero-section",
+                start: "top top",
+                end: "+=400%", // Provides 400vh of scrolling distance to finish animation
+                pin: true,
+                scrub: 1, // Smoothness
+            }
+        });
+
+        tl.to(canvasProps, {
+            frame: frameCount - 1,
+            snap: "frame",
+            ease: "none",
+            onUpdate: renderCanvas
+        });
+        
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Find all anchor and button elements on the page
+            const elements = document.querySelectorAll("a, button");
+            
+            elements.forEach(el => {
+                // Dynamically check if the element contains the text "WhatsApp"
+                if (el.textContent.includes("WhatsApp")) {
+                    const whatsappUrl = "https://wa.me/923444491099?text=" + encodeURIComponent("Hello! I saw your website and want to know more about your cosmetic products.");
+                    
+                    if (el.tagName.toLowerCase() === "a") {
+                        el.href = whatsappUrl;
+                        el.target = "_blank";
+                        el.rel = "noopener noreferrer";
+                    } else {
+                        el.addEventListener("click", (e) => {
+                            e.preventDefault();
+                            window.open(whatsappUrl, "_blank");
+                        });
+                        el.style.cursor = "pointer";
+                    }
+                }
+            });
+        });
+    </script>
+</body></html>
