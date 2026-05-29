@@ -1,7 +1,17 @@
 <!DOCTYPE html><html class="light" lang="en"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="google-site-verification" content="LSePyM3BhrxpVN97GcxF4jKrceWn2bnA0GkgIVVt4-g" />
 <title>Woman Beauty | Luxury Skincare Made Affordable</title>
+<!-- Google Search ke liye Title -->
+<title>Woman Beauty | Best Organic Skincare & Cosmetic Products in Pakistan</title>
+
+<!-- Website ki Description (Jo Google par niche likhi nazar aati hai) -->
+<meta name="description" content="Shop premium organic skincare and cosmetics at affordable prices. Free delivery across Pakistan on orders above Rs. 2,500. Order easily via WhatsApp!">
+
+<!-- Keywords (Jo log search karte hain) -->
+<meta name="keywords" content="skincare Pakistan, affordable cosmetics, natural glow creams, woman beauty online store, buy makeup via whatsapp">
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
@@ -475,28 +485,36 @@
         
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Find all anchor and button elements on the page
-            const elements = document.querySelectorAll("a, button");
+    function setupWhatsAppLinks() {
+        // WhatsApp API requires the country code without the '+' or '0'
+        const phoneNumber = "923444491099"; 
+        const message = encodeURIComponent("Hello! I saw your website and want to know more about your cosmetic products.");
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+        // Select all elements with the 'whatsapp-btn' class
+        const buttons = document.querySelectorAll('.whatsapp-btn');
+        
+        buttons.forEach(btn => {
+            // If the element is an anchor tag <a>, set the href directly
+            if (btn.tagName.toLowerCase() === 'a') {
+                btn.href = whatsappUrl;
+                btn.target = "_blank"; // Opens in a new tab
+                btn.rel = "noopener noreferrer";
+            } else {
+                // If the element is a <button> or an icon <span>, attach a click event
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.open(whatsappUrl, '_blank');
+                });
+            }
             
-            elements.forEach(el => {
-                // Dynamically check if the element contains the text "WhatsApp"
-                if (el.textContent.includes("WhatsApp")) {
-                    const whatsappUrl = "https://wa.me/923444491099?text=" + encodeURIComponent("Hello! I saw your website and want to know more about your cosmetic products.");
-                    
-                    if (el.tagName.toLowerCase() === "a") {
-                        el.href = whatsappUrl;
-                        el.target = "_blank";
-                        el.rel = "noopener noreferrer";
-                    } else {
-                        el.addEventListener("click", (e) => {
-                            e.preventDefault();
-                            window.open(whatsappUrl, "_blank");
-                        });
-                        el.style.cursor = "pointer";
-                    }
-                }
-            });
+            // Optional: Change cursor to pointer for better UX if applied to icons/divs
+            btn.style.cursor = 'pointer'; 
         });
-    </script>
-</body></html>
+    }
+
+    // Run the setup automatically once the page is fully loaded
+    document.addEventListener("DOMContentLoaded", setupWhatsAppLinks);
+</script>
+</body>
+</html>
